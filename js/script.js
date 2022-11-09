@@ -22,13 +22,10 @@ function playGame(playerInput) {
 			(argComputerMove == 'papier' && argPlayerMove == 'nożyce')
 		) {
 			printMessage('Ty wygrywasz!');
-			return 'Ty wygrywasz!';
 		} else if (argComputerMove == argPlayerMove) {
 			printMessage('Tym razem remis!');
-			return 'Tym razem remis!';
 		} else {
 			printMessage('Tym razem przegrywasz :(');
-			return 'Tym razem przegrywasz :(';
 		}
 	}
 
@@ -42,7 +39,7 @@ function playGame(playerInput) {
 
 	let playerMove = getMoveName(playerInput);
 
-	let wonMove = displayResult(computerMove, playerMove);
+	displayResult(computerMove, playerMove);
 }
 
 document.getElementById('play-rock').addEventListener('click', function () {
