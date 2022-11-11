@@ -30,8 +30,8 @@
 			}
 		};
 
-		let computerMove = getMoveName(Math.floor(Math.random() * 3 + 1)),
-			playerMove = getMoveName(playerInput);
+		const computerMove = getMoveName(Math.floor(Math.random() * 3 + 1));
+		const playerMove = getMoveName(playerInput);
 		console.log('Ruch komputera: ' + computerMove);
 		console.log('Gracz wpisał: ' + playerInput);
 
